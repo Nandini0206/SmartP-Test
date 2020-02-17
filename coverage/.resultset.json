@@ -3,10 +3,28 @@
     "coverage": {
       "/Users/nandinipatel/code/SmartP-Test/spec/parse_spec.rb": {
         "lines": [
-
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/nandinipatel/code/SmartP-Test/lib/parse.rb": {
+        "lines": [
+          1,
+          null,
+          null
         ]
       }
     },
-    "timestamp": 1581934653
+    "timestamp": 1581934969
   }
 }
