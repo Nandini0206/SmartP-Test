@@ -3,11 +3,15 @@ require "parse"
 
  describe Parse do
 
-   describe "#parser" do
-     it "parses contents of file" do
-       expect(subject.parser("webserver.log")).to include(["/contact", "184.123.665.067"])
-     end
-   end
+   describe '#parser' do
+    it 'parses contents of file when file exists' do
+      expect(subject.parser('webserver.log')).to include(['/contact', '184.123.665.067'])
+    end
+
+    it 'raises error when incorrect filename' do
+      expect { subject.parser('web.log') }.to raise_error 'File does not exist'
+    end
+  end
 
    describe "#most_viewed" do
      it "shows the most viewed pages" do
