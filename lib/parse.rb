@@ -9,6 +9,8 @@ class Parse
   end
 
   def parser(file)
+    raise 'File does not exist' unless File.file?(file)
+
     File.foreach(file) do |line|
       @contents << line
     end
